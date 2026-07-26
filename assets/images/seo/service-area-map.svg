@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="coverage" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#68B545" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#68B545" stop-opacity="0.02"/>
+    </radialGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F5F7F8" rx="16"/>
+
+  <!-- Coverage radius circle (30 miles from San Pablo) -->
+  <circle cx="400" cy="300" r="240" fill="url(#coverage)" stroke="#68B545" stroke-width="1.5" stroke-dasharray="8,4" opacity="0.6"/>
+
+  <!-- Major Highways -->
+  <g stroke="#D1D5DB" stroke-width="3" fill="none" stroke-linecap="round">
+    <!-- I-94 (horizontal) -->
+    <path d="M 50,220 Q 200,215 350,230 Q 500,245 650,225 Q 720,218 780,210"/>
+    <!-- I-35W (vertical) -->
+    <path d="M 380,80 Q 375,180 370,280 Q 365,380 360,480 Q 358,530 355,580"/>
+    <!-- I-35E (vertical east) -->
+    <path d="M 460,100 Q 455,180 450,260 Q 445,340 440,420 Q 438,480 435,560"/>
+    <!-- I-494 (ring) -->
+    <path d="M 250,180 Q 260,350 280,420 Q 350,470 450,460 Q 550,440 580,350 Q 590,280 560,200 Q 500,150 400,145 Q 300,150 250,180"/>
+    <!-- Hwy 36 -->
+    <path d="M 300,260 Q 400,255 500,265 Q 580,272 660,280"/>
+    <!-- Hwy 10 -->
+    <path d="M 350,140 Q 380,200 400,280 Q 410,340 400,400"/>
+  </g>
+
+  <!-- Highway labels -->
+  <g font-family="Arial,sans-serif" font-size="10" fill="#9CA3AF" font-weight="bold">
+    <text x="120" y="212">I-94</text>
+    <text x="360" y="130">I-35W</text>
+    <text x="465" y="130">I-35E</text>
+    <text x="520" y="450">I-494</text>
+    <text x="510" y="255">Hwy 36</text>
+  </g>
+
+  <!-- Water features -->
+  <g fill="#B3D4E8" opacity="0.5">
+    <!-- Lake Minnetonka (west) -->
+    <ellipse cx="160" cy="300" rx="55" ry="35"/>
+    <!-- White Bear Lake -->
+    <ellipse cx="540" cy="180" rx="30" ry="20"/>
+    <!-- Lake Calhoun / Bde Maka Ska -->
+    <ellipse cx="320" cy="290" rx="18" ry="14"/>
+    <!-- Lake Harriet -->
+    <ellipse cx="305" cy="310" rx="12" ry="10"/>
+    <!-- Mississippi River (stylized) -->
+    <path d="M 380,50 Q 390,100 395,150 Q 400,200 390,260 Q 380,320 370,380 Q 365,430 360,480" stroke="#B3D4E8" stroke-width="6" fill="none" opacity="0.5"/>
+  </g>
+
+  <!-- City dots and labels -->
+  <g font-family="Arial,sans-serif" font-size="11" fill="#374151">
+    <!-- Minneapolis -->
+    <circle cx="340" cy="260" r="7" fill="#264B1F" filter="url(#shadow)"/>
+    <text x="350" y="258" font-weight="bold" font-size="13" fill="#1F2937">Minneapolis</text>
+
+    <!-- Saint Paul -->
+    <circle cx="450" cy="275" r="6" fill="#264B1F" filter="url(#shadow)"/>
+    <text x="460" y="273" font-weight="bold" font-size="13" fill="#1F2937">Saint Paul</text>
+
+    <!-- San Pablo (HQ) - Star marker -->
+    <g transform="translate(400,200)">
+      <circle r="10" fill="#68B545" filter="url(#shadow)"/>
+      <circle r="5" fill="#FFFFFF"/>
+      <text x="14" y="4" font-weight="bold" font-size="12" fill="#68B545">S&amp;Y HQ</text>
+    </g>
+
+    <!-- Bloomington -->
+    <circle cx="360" cy="370" r="4" fill="#68B545"/>
+    <text x="370" y="373">Bloomington</text>
+
+    <!-- Edina -->
+    <circle cx="330" cy="320" r="4" fill="#68B545"/>
+    <text x="270" y="340">Edina</text>
+
+    <!-- Woodbury -->
+    <circle cx="520" cy="300" r="4" fill="#68B545"/>
+    <text x="530" y="303">Woodbury</text>
+
+    <!-- Maplewood -->
+    <circle cx="500" cy="240" r="4" fill="#68B545"/>
+    <text x="510" y="243">Maplewood</text>
+
+    <!-- Roseville -->
+    <circle cx="410" cy="230" r="4" fill="#68B545"/>
+    <text x="418" y="228">Roseville</text>
+
+    <!-- Eagan -->
+    <circle cx="380" cy="390" r="4" fill="#68B545"/>
+    <text x="390" y="393">Eagan</text>
+
+    <!-- Burnsville -->
+    <circle cx="370" cy="420" r="4" fill="#68B545"/>
+    <text x="380" y="423">Burnsville</text>
+
+    <!-- Plymouth -->
+    <circle cx="270" cy="220" r="4" fill="#68B545"/>
+    <text x="220" y="215">Plymouth</text>
+
+    <!-- Blaine -->
+    <circle cx="400" cy="150" r="4" fill="#68B545"/>
+    <text x="410" y="153">Blaine</text>
+
+    <!-- Lakeville -->
+    <circle cx="390" cy="450" r="4" fill="#68B545"/>
+    <text x="400" y="453">Lakeville</text>
+
+    <!-- Oakdale -->
+    <circle cx="510" cy="260" r="4" fill="#68B545"/>
+    <text x="520" y="263">Oakdale</text>
+
+    <!-- Inver Grove Heights -->
+    <circle cx="420" cy="400" r="4" fill="#68B545"/>
+    <text x="430" y="403">Inver Grove Hts</text>
+
+    <!-- Apple Valley -->
+    <circle cx="410" cy="460" r="4" fill="#68B545"/>
+    <text x="420" y="463">Apple Valley</text>
+
+    <!-- Shakopee -->
+    <circle cx="270" cy="380" r="4" fill="#68B545"/>
+    <text x="220" y="395">Shakopee</text>
+
+    <!-- Hugo -->
+    <circle cx="520" cy="160" r="4" fill="#68B545"/>
+    <text x="530" y="163">Hugo</text>
+
+    <!-- White Bear Lake -->
+    <circle cx="530" cy="195" r="4" fill="#68B545"/>
+    <text x="540" y="198">White Bear Lk</text>
+
+    <!-- Savage -->
+    <circle cx="340" cy="430" r="4" fill="#68B545"/>
+    <text x="290" y="445">Savage</text>
+
+    <!-- Mendota Heights -->
+    <circle cx="430" cy="330" r="4" fill="#68B545"/>
+    <text x="440" y="333">Mendota Hts</text>
+
+    <!-- Vadnais Heights -->
+    <circle cx="490" cy="210" r="4" fill="#68B545"/>
+    <text x="500" y="213">Vadnais Hts</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(20, 520)">
+    <rect width="200" height="60" rx="8" fill="white" filter="url(#shadow)" stroke="#E5E7EB" stroke-width="1"/>
+    <circle cx="20" cy="20" r="6" fill="#264B1F"/>
+    <text x="32" y="24" font-family="Arial,sans-serif" font-size="11" fill="#374151">Metro Area</text>
+    <circle cx="20" cy="40" r="5" fill="#68B545"/>
+    <text x="32" y="44" font-family="Arial,sans-serif" font-size="11" fill="#374151">Service Area (30 mi radius)</text>
+  </g>
+</svg>

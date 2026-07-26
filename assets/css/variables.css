@@ -1,0 +1,186 @@
+/* ============================================
+   S&Y TREE SERVICES - CSS CUSTOM PROPERTIES
+   Landing Page v1.0
+   ============================================ */
+
+:root {
+  /* ---- Brand Colors ---- */
+  --color-primary: #68B545;
+  --color-primary-light: #8CCF6A;
+  --color-primary-dark: #4A8A2E;
+  --color-primary-rgb: 104, 181, 69;
+  --color-dark-green: #264B1F;
+  --color-dark-green-rgb: 38, 75, 31;
+  --color-white: #FFFFFF;
+  --color-white-rgb: 255, 255, 255;
+  --color-bg: #F5F7F8;
+  --color-bg-alt: #EBF0F2;
+  --color-dark: #121212;
+  --color-dark-rgb: 18, 18, 18;
+
+  /* ---- Neutral Colors ---- */
+  --color-gray-50: #F9FAFB;
+  --color-gray-100: #F3F4F6;
+  --color-gray-200: #E5E7EB;
+  --color-gray-300: #D1D5DB;
+  --color-gray-400: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-600: #4B5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1F2937;
+  --color-gray-900: #111827;
+
+  /* ---- Semantic Colors ---- */
+  --color-danger: #EF4444;
+  --color-danger-dark: #DC2626;
+  --color-warning: #F59E0B;
+  --color-success: #10B981;
+  --color-info: #3B82F6;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #128C7E;
+
+  /* ---- Typography ---- */
+  --font-heading: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
+
+  /* Font Sizes (Fluid) */
+  --fs-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+  --fs-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
+  --fs-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --fs-md: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+  --fs-lg: clamp(1.15rem, 1rem + 0.75vw, 1.35rem);
+  --fs-xl: clamp(1.35rem, 1.1rem + 1.25vw, 1.75rem);
+  --fs-2xl: clamp(1.75rem, 1.3rem + 2.25vw, 2.5rem);
+  --fs-3xl: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+  --fs-4xl: clamp(2.5rem, 1.75rem + 3.75vw, 4rem);
+  --fs-hero: clamp(2.75rem, 1.5rem + 6.25vw, 5.5rem);
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  /* Line Heights */
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.65;
+  --lh-loose: 1.8;
+
+  /* Letter Spacing */
+  --ls-tight: -0.025em;
+  --ls-normal: 0;
+  --ls-wide: 0.025em;
+  --ls-wider: 0.05em;
+  --ls-widest: 0.1em;
+
+  /* ---- Spacing ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Section Spacing */
+  --section-padding: clamp(4rem, 3rem + 5vw, 8rem);
+  --section-gap: clamp(5rem, 4rem + 5vw, 9rem);
+
+  /* ---- Layout ---- */
+  --container-max: 1280px;
+  --container-wide: 1440px;
+  --container-narrow: 960px;
+  --container-padding: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+
+  /* Grid */
+  --grid-gap: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+  --grid-gap-sm: clamp(0.75rem, 0.5rem + 1.25vw, 1.25rem);
+
+  /* ---- Borders ---- */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  --border-thin: 1px solid var(--color-gray-200);
+  --border-medium: 2px solid var(--color-gray-200);
+
+  /* ---- Shadows ---- */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.06);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.06);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 20px rgba(var(--color-primary-rgb), 0.3);
+  --shadow-glow-lg: 0 0 40px rgba(var(--color-primary-rgb), 0.25);
+
+  /* ---- Transitions ---- */
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-slower: 600ms;
+
+  /* ---- Z-Index Scale ---- */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-overlay: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-toast: 800;
+  --z-loading: 900;
+
+  /* ---- Header ---- */
+  --header-height: 72px;
+  --header-height-scrolled: 60px;
+
+  /* ---- Container ---- */
+  --container: 0 auto;
+  --container-width: min(var(--container-max), 100% - var(--container-padding) * 2);
+}
+
+/* ============================================
+   DARK MODE (data-theme="dark")
+   ============================================ */
+[data-theme="dark"] {
+  --color-bg: #0D1117;
+  --color-bg-alt: #161B22;
+  --color-white: #E6EDF3;
+  --color-dark: #F0F6FC;
+  --color-gray-100: #1C2128;
+  --color-gray-200: #30363D;
+  --color-gray-300: #484F58;
+  --color-gray-400: #6E7681;
+  --color-gray-500: #8B949E;
+  --color-gray-600: #B1BAC4;
+  --color-gray-700: #C9D1D9;
+  --color-gray-800: #E6EDF3;
+  --color-gray-900: #F0F6FC;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.35);
+}

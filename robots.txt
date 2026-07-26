@@ -1,0 +1,9 @@
+# S&Y Tree Services - robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://www.sytreeservices.com/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /admin/
+Disallow: /private/

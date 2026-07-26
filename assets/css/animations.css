@@ -1,0 +1,201 @@
+/* ============================================
+   S&Y TREE SERVICES - ANIMATIONS
+   Scroll Reveal, Hover, Transitions, Keyframes
+   ============================================ */
+
+/* ---- Scroll Reveal Base ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal.reveal-left {
+  transform: translateX(-40px);
+}
+.reveal.reveal-left.revealed {
+  transform: translateX(0);
+}
+.reveal.reveal-right {
+  transform: translateX(40px);
+}
+.reveal.reveal-right.revealed {
+  transform: translateX(0);
+}
+.reveal.reveal-scale {
+  transform: scale(0.9);
+}
+.reveal.reveal-scale.revealed {
+  transform: scale(1);
+}
+
+/* Stagger delays */
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ---- Hover Effects ---- */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+.service-card:hover .service-card-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+.why-card:hover .why-icon {
+  transform: scale(1.15);
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.gallery-item:hover {
+  transform: translateY(-4px);
+}
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+.social-link:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.floating-btn:hover {
+  transform: scale(1.15);
+  box-shadow: var(--shadow-xl);
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ---- Pulse Animation (Emergency) ---- */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(var(--color-danger-rgb, 239, 68, 68), 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(var(--color-danger-rgb, 239, 68, 68), 0); }
+  100% { box-shadow: 0 0 0 0 rgba(var(--color-danger-rgb, 239, 68, 68), 0); }
+}
+.emergency-icon {
+  animation: pulse 2s infinite;
+  border-radius: var(--radius-full);
+}
+
+/* ---- Shimmer (Loading) ---- */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.loading-shimmer {
+  background: linear-gradient(90deg, var(--color-gray-100) 25%, var(--color-gray-200) 50%, var(--color-gray-100) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* ---- Fade In Up ---- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fadeInUp 0.6s var(--ease-out) forwards;
+}
+
+/* ---- Fade In ---- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in {
+  animation: fadeIn 0.5s var(--ease-out) forwards;
+}
+
+/* ---- Scale In ---- */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.scale-in {
+  animation: scaleIn 0.4s var(--ease-spring) forwards;
+}
+
+/* ---- Slide In Right ---- */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---- Counter Number ---- */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Floating ---- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ---- Glow Pulse ---- */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 5px rgba(var(--color-primary-rgb), 0.3); }
+  50% { box-shadow: 0 0 20px rgba(var(--color-primary-rgb), 0.5); }
+}
+.glow-pulse {
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+/* ---- Spinner ---- */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.fa-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* ---- Bounce ---- */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* ---- Reduced Motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

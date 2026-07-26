@@ -1,0 +1,22 @@
+{
+  "name": "S&Y Tree Services",
+  "short_name": "S&Y Tree",
+  "description": "Professional tree removal, trimming, stump grinding, and emergency tree services in Minneapolis-St. Paul, MN.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#68B545",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
