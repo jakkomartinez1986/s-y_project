@@ -68,7 +68,7 @@ sy-tree-services/
 ## Contact
 
 - **Phone**: (651) 286-9103
-- **Email**: info@sytreeservices.com
+- **Email**: sytreeservices@gmail.com
 - **Address**: 284 Old Highway 8 NW, San Pablo, MN 55112
 
 ## License

@@ -102,7 +102,7 @@ const ContactManager = (() => {
 
       const subject = encodeURIComponent(t.subject);
       const bodyEncoded = encodeURIComponent(body);
-      const mailtoUrl = 'mailto:info@sytreeservices.com?subject=' + subject + '&body=' + bodyEncoded;
+      const mailtoUrl = 'mailto:sytreeservices@gmail.com?subject=' + subject + '&body=' + bodyEncoded;
 
       try {
         window.location.href = mailtoUrl;
@@ -206,7 +206,7 @@ const ContactManager = (() => {
 
         const subject = encodeURIComponent(t.subject);
         const bodyEncoded = encodeURIComponent(body);
-        window.location.href = 'mailto:info@sytreeservices.com?subject=' + subject + '&body=' + bodyEncoded;
+        window.location.href = 'mailto:sytreeservices@gmail.com?subject=' + subject + '&body=' + bodyEncoded;
 
         form.reset();
         btn.disabled = false;
